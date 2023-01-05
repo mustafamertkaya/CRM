@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CRM" Class="calısantableDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MERT\MSSQLSERVER01;Initial Catalog=CRM;Integrated Security=True" SettingsObjectName="CRM.Properties.Settings" SettingsPropertyName="CRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.calısanEkle" Member="calısanEkle">
+    <Type Name="calısanEkle">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="calisanAdi" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="unvan" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+      <Column Name="tarih" Type="System.String" DbType="NVarChar(50)" CanBeNull="true" />
+    </Type>
+  </Table>
+</Database>

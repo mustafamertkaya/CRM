@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="tekliftable">
+  <DataContextMoniker Name="/tekliftableDataContext" />
+  <nestedChildShapes>
+    <classShape Id="35beeca5-587b-465b-9a8a-464a3f99d7cd" absoluteBounds="1.875, 2.375, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/tekliftableDataContext/teklifEkle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="6ab78b70-5a79-437f-b54d-7629d5b27024" absoluteBounds="1.8900000000000001, 2.835, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

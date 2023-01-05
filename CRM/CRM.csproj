@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B13A4C8-874D-4385-93CF-396C550FF6A3}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>CRM</RootNamespace>
+    <AssemblyName>CRM</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Antlr3.Runtime, Version=3.5.0.2, Culture=neutral, PublicKeyToken=eb42632606e9261f, processorArchitecture=MSIL">
+      <HintPath>..\packages\Antlr3.Runtime.3.5.1\lib\net40-client\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.Core, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.Core.3.7.103.1\lib\net45\AWSSDK.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="AWSSDK.DynamoDBv2, Version=3.3.0.0, Culture=neutral, PublicKeyToken=885c28607f98e604, processorArchitecture=MSIL">
+      <HintPath>..\packages\AWSSDK.DynamoDBv2.3.7.101.9\lib\net45\AWSSDK.DynamoDBv2.dll</HintPath>
+    </Reference>
+    <Reference Include="Bunifu_UI_v1.5.3">
+      <HintPath>C:\Users\MUSTAFAMERTKAYA\Desktop\Bnfu_1.5.3_crack\Bunifu_UI_v1.5.3.dll</HintPath>
+    </Reference>
+    <Reference Include="Iesi.Collections, Version=4.0.0.4000, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\Iesi.Collections.4.0.4\lib\net461\Iesi.Collections.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="NHibernate, Version=5.4.0.0, Culture=neutral, PublicKeyToken=aa95f207798dfdb4, processorArchitecture=MSIL">
+      <HintPath>..\packages\NHibernate.5.4.0\lib\net48\NHibernate.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.2.2.0\lib\net45\Remotion.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="Remotion.Linq.EagerFetching, Version=2.2.0.0, Culture=neutral, PublicKeyToken=fee00910d6e5f53b, processorArchitecture=MSIL">
+      <HintPath>..\packages\Remotion.Linq.EagerFetching.2.2.0\lib\net45\Remotion.Linq.EagerFetching.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Linq" />
+    <Reference Include="System.Management" />
+    <Reference Include="System.Messaging" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CRM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CRM.Designer.cs">
+      <DependentUpon>CRM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calısanEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calısanEkleForm.Designer.cs">
+      <DependentUpon>calısanEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calısanlar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="calısanlar.Designer.cs">
+      <DependentUpon>calısanlar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calısanlarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="calısanlarControl.Designer.cs">
+      <DependentUpon>calısanlarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="calısantable.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>calısantable.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="CRMDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="CRMDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CRMDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="HesapGirisi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HesapGirisi.Designer.cs">
+      <DependentUpon>HesapGirisi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="giris_yap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="giris_yap.Designer.cs">
+      <DependentUpon>giris_yap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kayit_ol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kayit_ol.Designer.cs">
+      <DependentUpon>kayit_ol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriEkle.Designer.cs">
+      <DependentUpon>musteriEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteriler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="musteriler.Designer.cs">
+      <DependentUpon>musteriler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musterilerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="musterilerControl.Designer.cs">
+      <DependentUpon>musterilerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="musteritable.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>musteritable.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="pano.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="pano.Designer.cs">
+      <DependentUpon>pano.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="siparisEkleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparisEkleForm.Designer.cs">
+      <DependentUpon>siparisEkleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siparisler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="siparisler.Designer.cs">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siparislerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="siparislerControl.Designer.cs">
+      <DependentUpon>siparislerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="siparistable.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>siparistable.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="stok.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stok.Designer.cs">
+      <DependentUpon>stok.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="stokControl.Designer.cs">
+      <DependentUpon>stokControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stokGuncelle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="stokGuncelle.Designer.cs">
+      <DependentUpon>stokGuncelle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="stoktable.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>stoktable.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="teklifEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="teklifEkle.Designer.cs">
+      <DependentUpon>teklifEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Teklifler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Teklifler.Designer.cs">
+      <DependentUpon>Teklifler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tekliflerControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="tekliflerControl.Designer.cs">
+      <DependentUpon>tekliflerControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tekliftable.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tekliftable.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="tickets.designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>tickets.dbml</DependentUpon>
+    </Compile>
+    <Compile Include="UrunEkle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrunEkle.Designer.cs">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UserControl1.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UserControl1.Designer.cs">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="CRM.resx">
+      <DependentUpon>CRM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calısanEkleForm.resx">
+      <DependentUpon>calısanEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calısanlar.resx">
+      <DependentUpon>calısanlar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="calısanlarControl.resx">
+      <DependentUpon>calısanlarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HesapGirisi.resx">
+      <DependentUpon>HesapGirisi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="giris_yap.resx">
+      <DependentUpon>giris_yap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kayit_ol.resx">
+      <DependentUpon>kayit_ol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriEkle.resx">
+      <DependentUpon>musteriEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musteriler.resx">
+      <DependentUpon>musteriler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="musterilerControl.resx">
+      <DependentUpon>musterilerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="pano.resx">
+      <DependentUpon>pano.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="siparisEkleForm.resx">
+      <DependentUpon>siparisEkleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siparisler.resx">
+      <DependentUpon>siparisler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="siparislerControl.resx">
+      <DependentUpon>siparislerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stok.resx">
+      <DependentUpon>stok.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokControl.resx">
+      <DependentUpon>stokControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="stokGuncelle.resx">
+      <DependentUpon>stokGuncelle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="teklifEkle.resx">
+      <DependentUpon>teklifEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Teklifler.resx">
+      <DependentUpon>Teklifler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tekliflerControl.resx">
+      <DependentUpon>tekliflerControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrunEkle.resx">
+      <DependentUpon>UrunEkle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UserControl1.resx">
+      <DependentUpon>UserControl1.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="calısantable.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>calısantable.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="calısantable.dbml.layout">
+      <DependentUpon>calısantable.dbml</DependentUpon>
+    </None>
+    <None Include="CRMDataSet.xsc">
+      <DependentUpon>CRMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CRMDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CRMDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CRMDataSet.xss">
+      <DependentUpon>CRMDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="CRMDataSet1.xsc">
+      <DependentUpon>CRMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="CRMDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>CRMDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CRMDataSet1.xss">
+      <DependentUpon>CRMDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="musteritable.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>musteritable.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="musteritable.dbml.layout">
+      <DependentUpon>musteritable.dbml</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="siparistable.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>siparistable.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="siparistable.dbml.layout">
+      <DependentUpon>siparistable.dbml</DependentUpon>
+    </None>
+    <None Include="stoktable.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>stoktable.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="stoktable.dbml.layout">
+      <DependentUpon>stoktable.dbml</DependentUpon>
+    </None>
+    <None Include="tekliftable.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>tekliftable.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tekliftable.dbml.layout">
+      <DependentUpon>tekliftable.dbml</DependentUpon>
+    </None>
+    <None Include="tickets.dbml">
+      <Generator>MSLinqToSQLGenerator</Generator>
+      <LastGenOutput>tickets.designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="tickets.dbml.layout">
+      <DependentUpon>tickets.dbml</DependentUpon>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Analyzer Include="..\packages\AWSSDK.DynamoDBv2.3.7.101.9\analyzers\dotnet\cs\AWSSDK.DynamoDBv2.CodeAnalysis.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{3259AA49-8AA1-44D3-9025-A0B520596A8C}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>

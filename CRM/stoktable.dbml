@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?><Database Name="CRM" Class="stoktableDataContext" xmlns="http://schemas.microsoft.com/linqtosql/dbml/2007">
+  <Connection Mode="AppSettings" ConnectionString="Data Source=MERT\MSSQLSERVER01;Initial Catalog=CRM;Integrated Security=True" SettingsObjectName="CRM.Properties.Settings" SettingsPropertyName="CRMConnectionString" Provider="System.Data.SqlClient" />
+  <Table Name="dbo.urunEkle" Member="urunEkle">
+    <Type Name="urunEkle">
+      <Column Name="id" Type="System.Int32" DbType="Int NOT NULL IDENTITY" IsDbGenerated="true" CanBeNull="false" />
+      <Column Name="urunAdı" Type="System.String" DbType="NVarChar(50) NOT NULL" CanBeNull="false" />
+      <Column Name="stokAdedi" Type="System.Int32" DbType="Int NOT NULL" CanBeNull="false" />
+      <Column Name="Fiyat" Type="System.Double" DbType="Float NOT NULL" CanBeNull="false" />
+    </Type>
+  </Table>
+</Database>

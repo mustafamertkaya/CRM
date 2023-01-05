@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="musteritable">
+  <DataContextMoniker Name="/musteritableDataContext" />
+  <nestedChildShapes>
+    <classShape Id="59101428-db0d-428f-a7fc-7b7a41016c89" absoluteBounds="2.625, 1.875, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/musteritableDataContext/musteriEkle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="2b4cba0b-cb12-4fd9-8f9e-403987aee714" absoluteBounds="2.64, 2.335, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>

@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ordesignerObjectsDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="siparistable">
+  <DataContextMoniker Name="/siparistableDataContext" />
+  <nestedChildShapes>
+    <classShape Id="2e48bb2b-2f72-40fc-a0c5-1e0e7652573a" absoluteBounds="2, 1.5, 2, 1.7708968098958331">
+      <DataClassMoniker Name="/siparistableDataContext/siparisEkle" />
+      <nestedChildShapes>
+        <elementListCompartment Id="ab3d2e83-69aa-40f4-9cd4-1fa029049937" absoluteBounds="2.015, 1.96, 1.9700000000000002, 1.2108968098958333" name="DataPropertiesCompartment" titleTextColor="Black" itemTextColor="Black" />
+      </nestedChildShapes>
+    </classShape>
+  </nestedChildShapes>
+</ordesignerObjectsDiagram>
